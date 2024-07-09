@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="app.css">
+   <script src="https://kit.fontawesome.com/7ec89d3f5c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header"> 
+        <div class="container">
+            <nav>
+                <h1 class="logo">Alfredo Leano</h1>
+        
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+ 
+            <div class="header-main-content">
+                <div class="header-text">
+                    <p>Frontend Developer</p>
+                    <h1>Hello, I'm Alfredo<br> from Los Angeles.</h1>
+                </div>
+                <img class="header-image" src="images/planet3d.png" alt="Planet Earth" >
+            </div>
+            
+        </div>
+    </div>
+<!-- ---------------- about ------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about_me.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I'm a recent graduate from UCSC looking to start the next chapter of my life. I'm currently working on a few projects you'll hopefully be able to see soon. When I'm not working on projects you can usually catch me outside on some sort of adventure.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front End Development</span><br>HTML, CSS, JavaScript, Bootstrap, SASS, Redux, and React</li>
+                            <li><span>Programming Languages</span><br>Python, C, Java, PostgreSQL, etc.</li>
+                            <li><span>Graphics</span><br>Three.js and WebGL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current</span><br>No experience yet.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Bachelor of Arts in Computer Science from UCSC.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------- portfolio -------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+                
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/consciencespendingplan.png" >
+
+                    <div class="layer">
+                        <h3>Conscience Spending Plan</h3>
+                        <p>A simple finance tracker to create categories, set budgets, and monitor spending with visual meters.</p>
+                        <a href="https://consciencespendingplan.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/drum_machine.png" >
+
+                    <div class="layer">
+                        <h3>Drum Machine</h3>
+                        <p>Experience the rhythm of creativity with my React-powered drum machine, offering seamless beat production and live sound preview for an immersive music-making journey.</p>
+                        <a href="https://drum-machine-al.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/markdown_previewer.png" >
+
+                    <div class="layer">
+                        <h3>Markdown Previewer</h3>
+                        <p>React app that lets you write and preview Markdown text in real-time, with an expandable editor and live preview pane.</p>
+                        <a href="https://664eaa7416ea9a8ab1cd0df2--majestic-rolypoly-3c0419.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/random_quote_machine.png" >
+
+                    <div class="layer">
+                        <h3>Random Quote Machine</h3>
+                        <p>Generate random quotes and have the ability to tweet them.</p>
+                        <a href="https://66387886822f9482791cb3c0--glistening-semifreddo-580e7b.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pokemon_search.png" >
+
+                    <div class="layer">
+                        <h3>Pokémon Search</h3>
+                        <p>Search up a wide array of pokémons while being able to look at their stats.</p>
+                        <a href="https://codepen.io/alfredoleano/full/qBwxLOw"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Cash_Register.png" >
+
+                    <div class="layer">
+                        <h3>Cash Register</h3>
+                        <p>Working cash register where user enters any certain amount of money to purchase an item.</p>
+                        <a href="https://codepen.io/alfredoleano/full/jORmdqG"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/phone_number_checker.png" >
+
+                    <div class="layer">
+                        <h3>Phone Number Checker</h3>
+                        <p>Users enter phones number and the program checks if they're valid US phone numbers.</p>
+                        <a href="https://codepen.io/alfredoleano/full/MWRgGbX"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/roman_numeral_converter.png" >
+
+                    <div class="layer">
+                        <h3>Roman Numeral Converter</h3>
+                        <p>Users enter numbers which is then converted to a roman numeral.</p>
+                        <a href="https://codepen.io/alfredoleano/full/poBzLgy"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/palindrome.png" >
+
+                    <div class="layer">
+                        <h3>Palindrome Checker</h3>
+                        <p>Users enter words to see if they're palindromes.</p>
+                        <a href="https://codepen.io/alfredoleano/full/yLwLgYQ"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/product_landing_page.png" >
+
+                    <div class="layer">
+                        <h3>Product Landing Page</h3>
+                        <p>Product landing page showing off the Trailblazers board game.</p>
+                        <a href="https://codepen.io/alfredoleano/full/yLwLgYQ"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/technical_documentation.png" >
+
+                    <div class="layer">
+                        <h3>Technical Documentation Page</h3>
+                        <p>Technical document based on CSS that is catered towards beginners.</p>
+                        <a href="https://codepen.io/alfredoleano/full/ExMxZaq"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/tribute_page.png" >
+
+                    <div class="layer">
+                        <h3>Tribute Page</h3>
+                        <p>Tribute page dedicated to Frodo Baggins.</p>
+                        <a href="https://codepen.io/alfredoleano/full/abMoWyx"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/student_employment_survey.png" >
+
+                    <div class="layer">
+                        <h3>Student Employment Survey</h3>
+                        <p>Survey where recent grads answer questions regarding their career status.</p>
+                        <a href="https://codepen.io/alfredoleano/full/jOJNooK"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="images/mouse.webp" >
+
+                    <div class="layer">
+                        <h3>3D Interactive Mouse</h3>
+                        <p>The website allows you to make a mouse move around.</p>
+                        <a href="https://people.ucsc.edu/~aleano/Assignment%202/BlockyAnimal.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/connect4.webp" >
+
+                    <div class="layer">
+                        <h3>Connect 4 AI Opponent</h3>
+                        <p>The program allows a user to play against a computer who's difficulty you can scale.</p>
+                        <a href="https://github.com/alfredoleano/Connect4AI"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pyramids.jpeg" >
+
+                    <div class="layer">
+                        <h3>Three.js Environment</h3>
+                        <p>The program allows the user to take a glimpse into a three.js environment which features pyramids, moons, a magic carpet, and a mysterious cube.</p>
+                        <a href="https://people.ucsc.edu/~aleano/Assignment%205/asg5.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+    <!-------------  contact  ------------------------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> alfredoleano8@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 6262975201</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/alfredo-leano-01682a285/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download="Resume"  class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &#169 Alfredo. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+</body>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-150px"
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxbJvG6wTKnX1LX-FdqlfucTLlY5nlBuYLHgImzOvFPkmwhPzeQ4M5_0By63cr05t8z8Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</html>
